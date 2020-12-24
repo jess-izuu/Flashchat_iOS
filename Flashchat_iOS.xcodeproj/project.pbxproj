@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		B6B78CD925950F56001D7E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CD825950F56001D7E52 /* AppDelegate.swift */; };
 		B6B78CDB25950F56001D7E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CDA25950F56001D7E52 /* SceneDelegate.swift */; };
-		B6B78CDD25950F56001D7E52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CDC25950F56001D7E52 /* ViewController.swift */; };
 		B6B78CE025950F56001D7E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B78CDE25950F56001D7E52 /* Main.storyboard */; };
 		B6B78CE225950F5B001D7E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B78CE125950F5B001D7E52 /* Assets.xcassets */; };
 		B6B78CE525950F5B001D7E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B78CE325950F5B001D7E52 /* LaunchScreen.storyboard */; };
 		B6B78CF025950F5C001D7E52 /* Flashchat_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CEF25950F5C001D7E52 /* Flashchat_iOSTests.swift */; };
 		B6B78CFB25950F5C001D7E52 /* Flashchat_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CFA25950F5C001D7E52 /* Flashchat_iOSUITests.swift */; };
+		B6B78D1525951238001D7E52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78D1425951238001D7E52 /* Constants.swift */; };
+		B6B78D1A25951264001D7E52 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78D1925951264001D7E52 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		B6B78CD525950F56001D7E52 /* Flashchat_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashchat_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B78CD825950F56001D7E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6B78CDA25950F56001D7E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6B78CDC25950F56001D7E52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6B78CDF25950F56001D7E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B78CE125950F5B001D7E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6B78CE425950F5B001D7E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		B6B78CF625950F5C001D7E52 /* Flashchat_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flashchat_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B78CFA25950F5C001D7E52 /* Flashchat_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashchat_iOSUITests.swift; sourceTree = "<group>"; };
 		B6B78CFC25950F5C001D7E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B78D1425951238001D7E52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6B78D1925951264001D7E52 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,13 @@
 			children = (
 				B6B78CD825950F56001D7E52 /* AppDelegate.swift */,
 				B6B78CDA25950F56001D7E52 /* SceneDelegate.swift */,
-				B6B78CDC25950F56001D7E52 /* ViewController.swift */,
-				B6B78CDE25950F56001D7E52 /* Main.storyboard */,
+				B6B78D0C25950F8F001D7E52 /* Models */,
+				B6B78D0B25950F87001D7E52 /* Views */,
+				B6B78D0D25950F95001D7E52 /* Controllers */,
 				B6B78CE125950F5B001D7E52 /* Assets.xcassets */,
 				B6B78CE325950F5B001D7E52 /* LaunchScreen.storyboard */,
 				B6B78CE625950F5B001D7E52 /* Info.plist */,
+				B6B78D1425951238001D7E52 /* Constants.swift */,
 			);
 			path = Flashchat_iOS;
 			sourceTree = "<group>";
@@ -126,6 +130,29 @@
 				B6B78CFC25950F5C001D7E52 /* Info.plist */,
 			);
 			path = Flashchat_iOSUITests;
+			sourceTree = "<group>";
+		};
+		B6B78D0B25950F87001D7E52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6B78CDE25950F56001D7E52 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6B78D0C25950F8F001D7E52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6B78D1925951264001D7E52 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6B78D0D25950F95001D7E52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B78CDD25950F56001D7E52 /* ViewController.swift in Sources */,
 				B6B78CD925950F56001D7E52 /* AppDelegate.swift in Sources */,
+				B6B78D1A25951264001D7E52 /* Message.swift in Sources */,
 				B6B78CDB25950F56001D7E52 /* SceneDelegate.swift in Sources */,
+				B6B78D1525951238001D7E52 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
